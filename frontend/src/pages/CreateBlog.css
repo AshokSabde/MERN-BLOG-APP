@@ -1,0 +1,73 @@
+.create-blog-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+    width: 40%;
+    max-width: 400px;
+    min-width: 250px;
+    height: auto;
+    text-align: start;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: -10px 10px 0px black;
+    transition: transform 0.2s ease-in-out;
+}
+.create-blog-container input,
+.create-blog-container textarea {
+    width: 100%;
+    max-width: 300px;
+    border: 2px solid black;
+    border-left: 4px solid black;
+    border-bottom: 4px solid black;
+    margin: 4px;
+    padding: 6px;
+    font-size: 13px;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+}
+.create-blog-container textarea {
+    height: 80px;
+    resize: none;
+}
+.form-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+.image-add {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .create-blog-container {
+        width: 70%;
+        padding: 12px;
+    }
+
+    .create-blog-container input,
+    .create-blog-container textarea {
+        max-width: none;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .create-blog-container {
+        width: 85%;
+        padding: 8px;
+    }
+
+    .create-blog-container input,
+    .create-blog-container textarea {
+        font-size: 11px;
+        padding: 5px;
+    }
+}
