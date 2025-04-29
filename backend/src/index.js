@@ -11,8 +11,8 @@ const PORT = process.env.PORT || 3002;
 app.use(express.json());
 app.use(cors());
 
-app.use("/auth",authRouter)
-app.use("/api/blogs",blogRouter)
+app.use("/auth",authRouter);
+app.use("/api/blogs",blogRouter);
 app.get("/",(req,res)=>{
     res.send("Hello World! I am working fine!")
 })
